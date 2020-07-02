@@ -5,14 +5,23 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
 
-    public Vector2 position;
+    
 
 
 
-    void OnMouseDown(){
-        Debug.Log("hey negro");
-        position.x ++;
-        transform.Translate(position  * Time.deltaTime);
-    }
+   /*void Update()
+ {
+    Vector3 mouse = Input.mousePosition;
+    Debug.Log("mouse position = " + mouse);
+    Ray castPoint = Camera.main.ScreenPointToRay(mouse);
+    Debug.Log("cast point  = " + castPoint);
+    /*
+    RaycastHit hit;
+    if (Physics.Raycast(castPoint, out hit, Mathf.Infinity))
+    {
+        transform.position = hit.point;
+    }//
+    transform.position = castPoint.origin;
+ }*/
 
 }
